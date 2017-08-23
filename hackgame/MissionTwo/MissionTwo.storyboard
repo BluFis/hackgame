@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13156.2"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ChalkboardSE.ttc">
+            <string>ChalkboardSE-Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Mission TwoVC-->
+        <scene sceneID="VWg-TG-vw5">
+            <objects>
+                <viewController storyboardIdentifier="MissionTwo" id="4r5-Hy-bIJ" customClass="MissionTwoVC" customModule="hackgame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ohs-il-3D4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wow! You are so Clever!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXe-iH-hqf">
+                                <rect key="frame" x="18" y="104" width="339" height="66.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="HXe-iH-hqf" secondAttribute="height" multiplier="382:75" id="N4m-VM-CZV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tips：What's the worst password? " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgb-PJ-srt">
+                                <rect key="frame" x="0.0" y="380.5" width="375" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cgb-PJ-srt" secondAttribute="height" multiplier="187:37" id="xCN-Pc-6ts"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="oV5-Us-rZK">
+                                <rect key="frame" x="102" y="210.5" width="170" height="130"/>
+                                <subviews>
+                                    <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Admin" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ywj-oP-jaB">
+                                        <rect key="frame" x="0.0" y="0.0" width="170" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="170" id="W54-Rl-XIg"/>
+                                            <constraint firstAttribute="height" constant="30" id="ffz-en-1fi"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3KC-h3-jT8">
+                                        <rect key="frame" x="0.0" y="50" width="170" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="170" id="HZH-C3-Uk6"/>
+                                            <constraint firstAttribute="height" constant="30" id="ITU-d8-jRe"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dlr-Za-Yg5" customClass="Button" customModule="hackgame" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="100" width="170" height="30"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Iq1-Nt-U5L"/>
+                                            <constraint firstAttribute="width" constant="170" id="mUM-1q-WEj"/>
+                                        </constraints>
+                                        <state key="normal" title="submit">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="passwordBtn:" destination="4r5-Hy-bIJ" eventType="touchUpInside" id="2rv-7M-JjV"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cgb-PJ-srt" firstAttribute="top" secondItem="oV5-Us-rZK" secondAttribute="bottom" constant="40" id="09M-hi-d64"/>
+                            <constraint firstAttribute="trailing" secondItem="HXe-iH-hqf" secondAttribute="trailing" constant="18" id="7w2-eD-qAG"/>
+                            <constraint firstItem="HXe-iH-hqf" firstAttribute="top" secondItem="Qnl-J4-4ev" secondAttribute="top" constant="84" id="DSB-6d-3b3"/>
+                            <constraint firstItem="oV5-Us-rZK" firstAttribute="centerX" secondItem="Ohs-il-3D4" secondAttribute="centerX" id="Oy4-Ci-tNZ"/>
+                            <constraint firstItem="Qnl-J4-4ev" firstAttribute="trailing" secondItem="cgb-PJ-srt" secondAttribute="trailing" id="TKq-MG-NR4"/>
+                            <constraint firstItem="HXe-iH-hqf" firstAttribute="leading" secondItem="Ohs-il-3D4" secondAttribute="leading" constant="18" id="aMT-Xg-bSM"/>
+                            <constraint firstItem="oV5-Us-rZK" firstAttribute="top" secondItem="HXe-iH-hqf" secondAttribute="bottom" constant="40" id="mGQ-41-hQr"/>
+                            <constraint firstItem="cgb-PJ-srt" firstAttribute="leading" secondItem="Qnl-J4-4ev" secondAttribute="leading" id="yOb-dq-vB2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qnl-J4-4ev"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="dlr-Za-Yg5" id="nXt-9P-7nL"/>
+                        <outlet property="textfield" destination="3KC-h3-jT8" id="VVr-rh-Ojd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r7j-BF-LAL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="264.80000000000001" y="36.431784107946029"/>
+        </scene>
+    </scenes>
+</document>
