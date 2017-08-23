@@ -17,6 +17,8 @@ extension UITextField{
             return ""
         case "about":
             return "Developed by NewGenius 2017®"
+        case "clear":
+            return "clearing"
         default:
             return "no such command"
         }

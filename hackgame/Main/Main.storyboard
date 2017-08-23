@@ -41,19 +41,19 @@
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tno-3R-eJa">
+                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Tno-3R-eJa">
                                 <rect key="frame" x="16" y="74" width="343" height="27"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device:~User$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rje-lb-85W">
-                                        <rect key="frame" x="0.0" y="0.0" width="86.5" height="27"/>
+                                        <rect key="frame" x="0.0" y="7" width="86.5" height="13"/>
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="11"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Ea-u2-sCi">
-                                        <rect key="frame" x="86.5" y="0.0" width="256.5" height="27"/>
-                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <rect key="frame" x="86.5" y="7" width="256.5" height="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="11"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
@@ -61,13 +61,6 @@
                                     <constraint firstAttribute="width" secondItem="Tno-3R-eJa" secondAttribute="height" multiplier="343:27" id="pct-J9-dwz"/>
                                 </constraints>
                             </stackView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C0z-tV-TZx">
-                                <rect key="frame" x="97" y="74" width="256.5" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -84,9 +77,10 @@
                         <viewLayoutGuide key="safeArea" id="5Xq-Wu-6xd"/>
                     </view>
                     <connections>
+                        <outlet property="StackView" destination="Tno-3R-eJa" id="Uh6-bm-x3i"/>
                         <outlet property="headLabel" destination="rje-lb-85W" id="ilL-ia-h8a"/>
                         <outlet property="helpLabel" destination="nWS-dY-Yxn" id="5fx-yj-OXB"/>
-                        <outlet property="textLabel" destination="C0z-tV-TZx" id="0bm-eT-HWP"/>
+                        <outlet property="textLabel" destination="4Ea-u2-sCi" id="eoM-vl-o8P"/>
                         <outlet property="titleLabel" destination="1KH-Oz-CEl" id="6hF-fl-0oI"/>
                     </connections>
                 </viewController>
