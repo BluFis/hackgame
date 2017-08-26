@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:LEVELS+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:LEVELS+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:USER+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:USER+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:hackgame.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

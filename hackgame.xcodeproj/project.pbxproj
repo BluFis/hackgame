@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		181D5B6E1F5146C9000A978A /* PrepareForGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181D5B6D1F5146C9000A978A /* PrepareForGame.swift */; };
 		189A0B841F4BEF57004CCA18 /* MissonOne.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189A0B821F4BEF57004CCA18 /* MissonOne.storyboard */; };
 		189A0B871F4BF20D004CCA18 /* MissionOneVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189A0B861F4BF20D004CCA18 /* MissionOneVC.swift */; };
 		189A0B8A1F4BF346004CCA18 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189A0B891F4BF346004CCA18 /* Button.swift */; };
@@ -19,13 +20,20 @@
 		189A0BAC1F4C50B7004CCA18 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189A0BA71F4C50B5004CCA18 /* LaunchScreen.storyboard */; };
 		189A0BAD1F4C50B7004CCA18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189A0BA91F4C50B5004CCA18 /* AppDelegate.swift */; };
 		189A0BAE1F4C50B7004CCA18 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 189A0BAA1F4C50B6004CCA18 /* Info.plist */; };
-		189A0BAF1F4C50B7004CCA18 /* Results.plist in Resources */ = {isa = PBXBuildFile; fileRef = 189A0BAB1F4C50B6004CCA18 /* Results.plist */; };
 		18A83C4A1F4C73CA0025A918 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A83C491F4C73CA0025A918 /* Main.swift */; };
+		18AAB2CF1F504845002EAB19 /* LoginAndRegisterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AAB2CE1F504845002EAB19 /* LoginAndRegisterModel.swift */; };
 		18CB0AE61F4D3AB300B946FC /* extensionLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18CB0AE51F4D3AB300B946FC /* extensionLabel.swift */; };
-		18CB0AE81F4D471000B946FC /* Account.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18CB0AE71F4D471000B946FC /* Account.plist */; };
+		18D09B7B1F4FE2760077C6F7 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D09B7A1F4FE2760077C6F7 /* SwiftyJSON.swift */; };
+		18D09B7E1F4FE5F30077C6F7 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 18D09B7C1F4FE5F30077C6F7 /* Model.xcdatamodeld */; };
+		18D09B811F4FE8040077C6F7 /* LoginAndRegister.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18D09B801F4FE8040077C6F7 /* LoginAndRegister.storyboard */; };
+		18EFCCA41F503B67002CF707 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EFCCA31F503B67002CF707 /* Register.swift */; };
+		18EFCCA61F503BA2002CF707 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18EFCCA51F503BA2002CF707 /* Login.swift */; };
+		BE9A34E2ADDF95323FD9D9D0 /* Pods_hackgame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 062BD88E1C74760D165EFBBE /* Pods_hackgame.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		062BD88E1C74760D165EFBBE /* Pods_hackgame.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hackgame.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		181D5B6D1F5146C9000A978A /* PrepareForGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrepareForGame.swift; sourceTree = "<group>"; };
 		189A0B6D1F4BEEA0004CCA18 /* hackgame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hackgame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		189A0B831F4BEF57004CCA18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = hackgame/Base.lproj/MissonOne.storyboard; sourceTree = "<group>"; };
 		189A0B861F4BF20D004CCA18 /* MissionOneVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionOneVC.swift; sourceTree = "<group>"; };
@@ -39,10 +47,16 @@
 		189A0BA81F4C50B5004CCA18 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		189A0BA91F4C50B5004CCA18 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		189A0BAA1F4C50B6004CCA18 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		189A0BAB1F4C50B6004CCA18 /* Results.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Results.plist; sourceTree = "<group>"; };
 		18A83C491F4C73CA0025A918 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		18AAB2CE1F504845002EAB19 /* LoginAndRegisterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAndRegisterModel.swift; sourceTree = "<group>"; };
 		18CB0AE51F4D3AB300B946FC /* extensionLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionLabel.swift; sourceTree = "<group>"; };
-		18CB0AE71F4D471000B946FC /* Account.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Account.plist; sourceTree = "<group>"; };
+		18D09B7A1F4FE2760077C6F7 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		18D09B7D1F4FE5F30077C6F7 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		18D09B801F4FE8040077C6F7 /* LoginAndRegister.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginAndRegister.storyboard; sourceTree = "<group>"; };
+		18EFCCA31F503B67002CF707 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		18EFCCA51F503BA2002CF707 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		694CBB67C6CCC0E1E4751410 /* Pods-hackgame.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hackgame.debug.xcconfig"; path = "Pods/Target Support Files/Pods-hackgame/Pods-hackgame.debug.xcconfig"; sourceTree = "<group>"; };
+		C16B87357428641CD7C176A2 /* Pods-hackgame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hackgame.release.xcconfig"; path = "Pods/Target Support Files/Pods-hackgame/Pods-hackgame.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,17 +64,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE9A34E2ADDF95323FD9D9D0 /* Pods_hackgame.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		133BA0F7F9132F5D5C2A5644 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				062BD88E1C74760D165EFBBE /* Pods_hackgame.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		189A0B641F4BEE9F004CCA18 = {
 			isa = PBXGroup;
 			children = (
 				189A0B6F1F4BEEA0004CCA18 /* hackgame */,
 				189A0B6E1F4BEEA0004CCA18 /* Products */,
+				A726CC78B809235720A78D2D /* Pods */,
+				133BA0F7F9132F5D5C2A5644 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,8 +103,8 @@
 				189A0BA91F4C50B5004CCA18 /* AppDelegate.swift */,
 				189A0BA61F4C50B5004CCA18 /* Base.lproj */,
 				189A0BAA1F4C50B6004CCA18 /* Info.plist */,
-				189A0BAB1F4C50B6004CCA18 /* Results.plist */,
-				18CB0AE71F4D471000B946FC /* Account.plist */,
+				18D09B7C1F4FE5F30077C6F7 /* Model.xcdatamodeld */,
+				18D09B7F1F4FE7DA0077C6F7 /* loginView */,
 				189A0B981F4C469D004CCA18 /* Main */,
 				189A0B851F4BEF6C004CCA18 /* MissonOne */,
 				189A0B8B1F4BF926004CCA18 /* MissionTwo */,
@@ -127,6 +152,7 @@
 		189A0B921F4BFD0B004CCA18 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				18D09B7A1F4FE2760077C6F7 /* SwiftyJSON.swift */,
 				189A0B931F4BFD4C004CCA18 /* ChoiceRecognize.swift */,
 			);
 			path = Model;
@@ -138,6 +164,7 @@
 				189A0B9B1F4C46CC004CCA18 /* Main.storyboard */,
 				18A83C491F4C73CA0025A918 /* Main.swift */,
 				18CB0AE51F4D3AB300B946FC /* extensionLabel.swift */,
+				181D5B6D1F5146C9000A978A /* PrepareForGame.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -159,6 +186,26 @@
 			path = Base.lproj;
 			sourceTree = "<group>";
 		};
+		18D09B7F1F4FE7DA0077C6F7 /* loginView */ = {
+			isa = PBXGroup;
+			children = (
+				18D09B801F4FE8040077C6F7 /* LoginAndRegister.storyboard */,
+				18EFCCA31F503B67002CF707 /* Register.swift */,
+				18EFCCA51F503BA2002CF707 /* Login.swift */,
+				18AAB2CE1F504845002EAB19 /* LoginAndRegisterModel.swift */,
+			);
+			path = loginView;
+			sourceTree = "<group>";
+		};
+		A726CC78B809235720A78D2D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				694CBB67C6CCC0E1E4751410 /* Pods-hackgame.debug.xcconfig */,
+				C16B87357428641CD7C176A2 /* Pods-hackgame.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -166,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 189A0B7F1F4BEEA0004CCA18 /* Build configuration list for PBXNativeTarget "hackgame" */;
 			buildPhases = (
+				245F1BB35E193C743F224394 /* [CP] Check Pods Manifest.lock */,
 				189A0B691F4BEEA0004CCA18 /* Sources */,
 				189A0B6A1F4BEEA0004CCA18 /* Frameworks */,
 				189A0B6B1F4BEEA0004CCA18 /* Resources */,
+				3BDDA9EEE3407BBECF536FDD /* [CP] Embed Pods Frameworks */,
+				ECC702FF642CCC869E39205A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -217,11 +267,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18D09B811F4FE8040077C6F7 /* LoginAndRegister.storyboard in Resources */,
 				189A0B8F1F4BF951004CCA18 /* MissionTwo.storyboard in Resources */,
 				189A0B841F4BEF57004CCA18 /* MissonOne.storyboard in Resources */,
 				189A0BAE1F4C50B7004CCA18 /* Info.plist in Resources */,
-				189A0BAF1F4C50B7004CCA18 /* Results.plist in Resources */,
-				18CB0AE81F4D471000B946FC /* Account.plist in Resources */,
 				189A0B9C1F4C46CC004CCA18 /* Main.storyboard in Resources */,
 				189A0BAC1F4C50B7004CCA18 /* LaunchScreen.storyboard in Resources */,
 				189A0BA51F4C4C54004CCA18 /* MissionThree.storyboard in Resources */,
@@ -230,19 +279,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		245F1BB35E193C743F224394 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3BDDA9EEE3407BBECF536FDD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hackgame/Pods-hackgame-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECC702FF642CCC869E39205A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-hackgame/Pods-hackgame-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		189A0B691F4BEEA0004CCA18 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				189A0BAD1F4C50B7004CCA18 /* AppDelegate.swift in Sources */,
+				18EFCCA41F503B67002CF707 /* Register.swift in Sources */,
 				189A0B871F4BF20D004CCA18 /* MissionOneVC.swift in Sources */,
+				18EFCCA61F503BA2002CF707 /* Login.swift in Sources */,
+				18AAB2CF1F504845002EAB19 /* LoginAndRegisterModel.swift in Sources */,
 				18A83C4A1F4C73CA0025A918 /* Main.swift in Sources */,
 				189A0B8D1F4BF940004CCA18 /* MissionTwoVC.swift in Sources */,
 				18CB0AE61F4D3AB300B946FC /* extensionLabel.swift in Sources */,
 				189A0B8A1F4BF346004CCA18 /* Button.swift in Sources */,
+				18D09B7B1F4FE2760077C6F7 /* SwiftyJSON.swift in Sources */,
+				18D09B7E1F4FE5F30077C6F7 /* Model.xcdatamodeld in Sources */,
 				189A0B941F4BFD4C004CCA18 /* ChoiceRecognize.swift in Sources */,
 				189A0BA31F4C4C44004CCA18 /* MissionThreeVC.swift in Sources */,
+				181D5B6E1F5146C9000A978A /* PrepareForGame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,6 +480,7 @@
 		};
 		189A0B801F4BEEA0004CCA18 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 694CBB67C6CCC0E1E4751410 /* Pods-hackgame.debug.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = VT7FZGV6NT;
 				INFOPLIST_FILE = hackgame/Info.plist;
@@ -390,6 +494,7 @@
 		};
 		189A0B811F4BEEA0004CCA18 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C16B87357428641CD7C176A2 /* Pods-hackgame.release.xcconfig */;
 			buildSettings = {
 				DEVELOPMENT_TEAM = VT7FZGV6NT;
 				INFOPLIST_FILE = hackgame/Info.plist;
@@ -423,6 +528,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		18D09B7C1F4FE5F30077C6F7 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				18D09B7D1F4FE5F30077C6F7 /* Model.xcdatamodel */,
+			);
+			currentVersion = 18D09B7D1F4FE5F30077C6F7 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 189A0B651F4BEE9F004CCA18 /* Project object */;
 }

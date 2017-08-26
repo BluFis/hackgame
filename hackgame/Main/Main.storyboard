@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fl9-r8-8xa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13178.6" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -18,7 +18,7 @@
         <!--Main-->
         <scene sceneID="QLB-ej-VT6">
             <objects>
-                <viewController id="fl9-r8-8xa" customClass="Main" customModule="hackgame" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Main" id="fl9-r8-8xa" customClass="Main" customModule="hackgame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zP2-qD-Xgy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,7 +32,7 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="// Enter help to show all commands" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWS-dY-Yxn">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="// Enter Help to show all commands" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nWS-dY-Yxn">
                                 <rect key="frame" x="16" y="47" width="343" height="27"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="nWS-dY-Yxn" secondAttribute="height" multiplier="343:27" id="xBT-cw-0yl"/>
@@ -41,17 +41,17 @@
                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Tno-3R-eJa">
+                            <stackView opaque="NO" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tno-3R-eJa">
                                 <rect key="frame" x="16" y="74" width="343" height="27"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device:~User$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rje-lb-85W">
-                                        <rect key="frame" x="0.0" y="7" width="86.5" height="13"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="86.5" height="27"/>
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="11"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Ea-u2-sCi">
-                                        <rect key="frame" x="86.5" y="7" width="256.5" height="13"/>
+                                        <rect key="frame" x="86.5" y="0.0" width="256.5" height="27"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="11"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -77,9 +77,10 @@
                         <viewLayoutGuide key="safeArea" id="5Xq-Wu-6xd"/>
                     </view>
                     <connections>
-                        <outlet property="StackView" destination="Tno-3R-eJa" id="Uh6-bm-x3i"/>
                         <outlet property="headLabel" destination="rje-lb-85W" id="ilL-ia-h8a"/>
                         <outlet property="helpLabel" destination="nWS-dY-Yxn" id="5fx-yj-OXB"/>
+                        <outlet property="helpView" destination="nWS-dY-Yxn" id="r1Q-Kc-7An"/>
+                        <outlet property="stackView" destination="Tno-3R-eJa" id="WwC-zR-V9G"/>
                         <outlet property="textLabel" destination="4Ea-u2-sCi" id="eoM-vl-o8P"/>
                         <outlet property="titleLabel" destination="1KH-Oz-CEl" id="6hF-fl-0oI"/>
                     </connections>

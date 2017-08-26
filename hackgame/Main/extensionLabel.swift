@@ -2,25 +2,28 @@ import UIKit
 
 extension UITextField{
 
-    func callback(Str:String,result:Array<Any>)->String{
+    func callback(Str:String,result:[String:Any])->[String]{
         
         switch Str {
-        case "help":
-            return "account  display your profile.\("/n")start  start game.\("/n")rank  display all rank.\("/n")about  about this game"
-        case "account":
-            return "name:\(result[0] as! String),level:\(result[1] as! Int),timeCost:\(result[2] as! String),tryTimes:\(result[3] as! Int),score:\(result[4]as! Int)"
-        case "start":
-            return "prepare to start...."
-        case "rank":
-            return "downloading rank"
-        case "":
-            return ""
-        case "about":
-            return "Developed by NewGenius 2017®"
-        case "clear":
-            return "clearing"
+        case "Help":
+            return ["Account : display your profile.","Start : start game.","Rank : display all rank.","Clear : refresh screen","Back : back to login","About : about this game"]
+        case "Account":
+            let level = String(result["level"] as! Int)
+            let totalTry = String(result["totalTry"] as! Int)
+            let totalScore = String(result["totalScore"]as! Int)
+            return ["name:\(result["username"] as! String)","level:\(level)","timeCost:\(result["totalTime"] as! String)","tryTimes:\(totalTry)","score:\(totalScore)"]
+        case "Start":
+            return ["starting"]
+        case "Rank":
+            return ["downloading rank"]
+        case "About":
+            return ["Developed by NewGenius 2017®"]
+        case "Clear":
+            return ["clearing"]
+        case "Back":
+            return ["backing"]
         default:
-            return "no such command"
+            return ["no such command"]
         }
 
     }
