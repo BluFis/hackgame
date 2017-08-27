@@ -10,7 +10,7 @@ import UIKit
 
 class MissionTwoVC: UIViewController {
     @IBOutlet weak var textfield: UITextField!
-    
+    var result = ChoiceRecognize()
     @IBOutlet weak var button: Button!
     override func viewDidLoad() {
         super.viewDidLoad()

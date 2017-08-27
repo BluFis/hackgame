@@ -8,9 +8,9 @@ extension UITextField{
         case "Help":
             return ["Account : display your profile.","Start : start game.","Rank : display all rank.","Clear : refresh screen","Back : back to login","About : about this game"]
         case "Account":
-            let level = String(result["level"] as! Int)
-            let totalTry = String(result["totalTry"] as! Int)
-            let totalScore = String(result["totalScore"]as! Int)
+            let level = String(describing: result["level"]!)
+            let totalTry = String(describing:result["totalTry"]!)
+            let totalScore = String(describing:result["totalScore"]!)
             return ["name:\(result["username"] as! String)","level:\(level)","timeCost:\(result["totalTime"] as! String)","tryTimes:\(totalTry)","score:\(totalScore)"]
         case "Start":
             return ["starting"]

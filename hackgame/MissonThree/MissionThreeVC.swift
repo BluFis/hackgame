@@ -9,7 +9,7 @@
 import UIKit
 
 class MissionThreeVC: UIViewController {
-
+    let result  = ChoiceRecognize()
     @IBOutlet weak var passwordField: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()

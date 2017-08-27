@@ -72,8 +72,9 @@ class Main: UIViewController,UITextFieldDelegate {
                   items.removeFromSuperview()
               }
             }else if resultArray?.first == "starting"{
-                let nextVC = MissionOneVC()
-            self.present(nextVC, animated: true, completion: nil)
+                let storyboard = UIStoryboard(name: "MissonOne", bundle: nil)
+                let nextVC = storyboard.instantiateViewController(withIdentifier: "MissionOne") as! MissionOneVC
+                self.present(nextVC, animated: true, completion: nil)
             return
             }else{
             resultLabel.text = resultArray?.first

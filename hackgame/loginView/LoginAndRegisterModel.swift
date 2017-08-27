@@ -78,6 +78,10 @@ class checkLogin {
         }else{
             let user = USER.mr_createEntity()! as USER
             user.username = username
+            user.level = 0
+            user.timeSpend = "00:00"
+            user.totalScore = 0
+            user.totalTry = 0
             user.password = password
             user.email = email
             user.lastLogin = self.currentTime()
@@ -100,11 +104,27 @@ class checkLogin {
                                     completionHandler(errMsg)
                                 }
                             }else{
-                                let user = USER.mr_findAll()![0] as! USER
-                                user.lastLogin = self.currentTime()
-                                user.managedObjectContext?.mr_saveToPersistentStoreAndWait()
-                                completionHandler("Success")
+                                let UserCount = USER.mr_findAll()!.count
+                                
+                                if UserCount  > 0 {
+                                    let user = USER.mr_findAll()![0] as! USER
+                                        user.lastLogin = self.currentTime()
+                                        user.managedObjectContext?.mr_saveToPersistentStoreAndWait()
+                                }else{
+//                                    let user = USER.mr_createEntity()! as USER
+//                                    user.username = username
+//                                    user.level = 0
+//                                    user.timeSpend = "00:00"
+//                                    user.totalScore = 0
+//                                    user.totalTry = 0
+//                                    user.password = password
+//                                    user.email = email
+//                                    user.lastLogin = self.currentTime()
+//                                    user.managedObjectContext?.mr_saveToPersistentStoreAndWait()
+                                }
+                                 completionHandler("Success")
                             }
+                            
                         }
                     }else{
                         completionHandler("Internet connection error")
@@ -117,7 +137,7 @@ class checkLogin {
             completionHandler("empty email")
         }
    
-        
+       
     }
     
     
